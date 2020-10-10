@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '12.13'
+deploy:
+  provider: npm
+  email: johanbook@hotmail.com
+  api_key:
+    secure: bfd7iulCnIf7y3wKshoi9rJ9Qd4SXllDYHslTDh9P0xa5mIzzq87AQSVtCaMnNI9FpK9KCpkJ9QLh93ugN/wml68Y0+lLqrBcaNxNXdyTAZPwJw5hDPdfiCmGde7knp2jElTQFu46k+fbJypwKpHPmlxW0kyPkUuPJQWlwr1TCDH05tsMSQysuCPePYbACifU2VjrkTFmOdP6p409XvUXCEd3RVWnCR7nUYCVONwytSBsUk7fk3W2Lf3riC0Ib+kfp8w7Tg0dFPSWH1IuR3IjghmUwWEnmqHcLbDGgHzSYb6a9jJAwXpNxxa899mURCCGbWh9xrvBRCXQT3H0DC7I/OfECiYLW7skBevD5OfcnqeqKR/tjC/P57EV+Pc2B4RkY0MpPZP2RBBToc5j473CJlM/HDRTRqIzdyPdZbN7CKioZ7LVfDho9gV6wTIMC41WxGIQ67GtmOIxRi6bFKawapH34MOWWqkZ8yP4VN0KV82ZORbWysRSC6AZrKFtf09bd7YqJcHb7Bui3EMbz/gTO28ruqXYWopHYrxwA1W2fG3MH6JaRZ41jAYyipK7ST5ERyOutssSfBWgyVOcmZ7SQyspwN1/0KVysUNlUMhWOWf0O3xcYM+TwZ5k416asa1xhuPs855Z8j4fjWycLKfN2VL7P4wjt/gSP0KL1miGd4=
+  on:
+    repo: johanbook/book-utils
+    branch: main
+  skip_cleanup: 'true'
