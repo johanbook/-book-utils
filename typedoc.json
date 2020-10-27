@@ -1,0 +1,4 @@
+{
+ "exclude": "**/*+(index|.spec|.test).ts",
+ "theme": "minimal"
+}

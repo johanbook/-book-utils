@@ -13,11 +13,10 @@
   "homepage": "https://github.com/johanbook/book-utils#readme",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && cp -r package.json src/assets/ dist/ && npm run transpile",
-    "build:docs": "styleguidist build",
+    "build:docs": "typedoc --out docs src",
     "format": "prettier --write --prose-wrap always src/**/*",
     "lint": "eslint 'src/**/*.{js,ts}' --max-warnings 0 --rule 'no-console: 2'",
     "release": "standard-version",
-    "serve": "styleguidist server",
     "test": "react-scripts test",
     "test:ci": "CI=true npm run test",
     "test:coverage": "CI=true npm test -- --coverage",
@@ -76,14 +75,17 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@welldone-software/why-did-you-render": "^4.3.1",
+    "docdash": "^1.2.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.3",
     "husky": "^4.2.5",
+    "jsdoc": "^3.6.6",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "react-scripts": "^3.4.3",
     "react-test-renderer": "^16.13.1",
-    "standard-version": "^9.0.0"
+    "standard-version": "^9.0.0",
+    "typedoc": "^0.19.2"
   },
   "peerDependencies": {
     "react": "^16.13.1",
